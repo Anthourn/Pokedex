@@ -1,0 +1,69 @@
+/* Ability colors */
+.types button{
+    color:white;
+    cursor: auto;
+}
+.Rock{
+    background:#654321
+}
+.Water{
+    background: cyan;
+}
+.Electric{
+    background-color: yellow;
+}
+.types .Electric{
+    color: black;
+}
+.Ground{
+    background: #C2B280;
+}
+.Poison{
+    background: purple;
+}
+.Steel{
+    background-color: aliceblue;
+}
+.types .Steel{
+    color: black;
+}
+.Grass{
+    background-color: green;
+}
+
+.Ice{
+    background-color: aquamarine;
+}
+.Psychic{
+background-color: palevioletred;
+}
+.Fire{
+    background-color: orangered;
+}
+.Flying{
+    background-color: skyblue;
+}
+.Bug{
+    background-color: #A6B91A
+}
+.Normal{
+    background-color: #A8A77A;
+}
+.Fighting{
+    background-color:#C22E28 ;
+}
+
+.Ghost{
+    background-color: #735797;
+}
+.Dragon{
+    background-color: #6F35FC;
+}
+.Dark{
+    background-color: #705746;
+}
+.Fairy{
+    background-color: #D685AD;
+}
+
+

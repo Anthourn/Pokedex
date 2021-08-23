@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <link rel="stylesheet" href="/test.css">
+  </head>
+  <body>
+    <div class="layout">
+
+
+    <div class="container">
+
+
+
+      <h1 class = 'h1'> <%=pokemon.name%></h1>
+      <h4 class = 'classification'> <%=pokemon.misc.classification%></h4>
+      <img class = showImg src="<%=pokemon.img%>" alt="">
+      <div class="types">
+        <% for(let i = 0; i<pokemon.type.length; i++) {
+          %><button class=<%=pokemon.type[i]%> type="button" name="button"> <%=pokemon.type[i]%> </button>
+      <%  }%>
+      </div>
+
+
+
+    </div>
+    <div class="table1">
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Stats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HP</td>
+          <% if(Number(pokemon.stats.hp)>=100){
+          %><td class = 'high'><%=pokemon.stats.hp%></td>
+        <%} else {%> <td><%=pokemon.stats.hp%></td>
+      <%  }%>
+        </tr>%></td>
+        </tr>
+        <tr>
+          <td>Attack</td>
+          <% if(Number(pokemon.stats.attack)>=100){
+          %><td class = 'high'><%=pokemon.stats.attack%></td>
+        <%} else {%> <td><%=pokemon.stats.attack%></td>
+      <%  }%>
+        </tr>
+        </tr>
+        <tr>
+          <td>Defense</td>
+          <% if(Number(pokemon.stats.defense)>=100){
+          %><td class = 'high'><%=pokemon.stats.defense%></td>
+        <%} else {%> <td><%=pokemon.stats.defense%></td>
+      <%  }%>
+        </tr>
+        </tr>
+        <tr>
+          <td>Special attack</td>
+          <% if(Number(pokemon.stats.spattack)>=100){
+          %><td class = 'high'><%=pokemon.stats.spattack%></td>
+        <%} else {%> <td><%=pokemon.stats.spattack%></td>
+      <%  }%>
+        </tr>
+        <tr>
+          <td>Special defense</td>
+          <% if(Number(pokemon.stats.spdefense)>=100){
+          %><td class = 'high'><%=pokemon.stats.spdefense%></td>
+        <%} else {%> <td><%=pokemon.stats.defense%></td>
+      <%  }%>
+        </tr>
+        </tr>
+        <tr>
+          <td>Speed</td>
+          <% if(Number(pokemon.stats.speed)>=100){
+          %><td class = 'high'><%=pokemon.stats.speed%></td>
+        <%} else {%> <td><%=pokemon.stats.speed%></td>
+      <%  }%>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    </div>
+    <form class="" action="/pokedex" method="get">
+      <button id = 'back' type="submit" name="button">Pokedex</button>
+    </form>
+    
+  </body>
+</html>
